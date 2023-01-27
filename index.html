@@ -22,7 +22,7 @@
   </head>
 
   <body>
-    <section id="landing-page">
+    <section id="landing-page" onmousemove="moveBackground(event)">
       <nav>
         <figure>
           <img id="personal-logo" src="./assets/Logo.png" alt="" />
@@ -43,14 +43,14 @@
               >Projects</a
             >
           </li>
-          <li class="nav__link">
+          <li class="nav__link" onclick="toggleModal()">
             <a
               href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
               >Contact</a
             >
           </li>
-          <li class="nav__link click">
+          <li class="nav__link click" onclick="toggleContrast()">
             <a
               href="#"
               class="nav__link--anchor link__hover-effect link__hover-effect--black"
@@ -68,7 +68,7 @@
             I'm a <b class="orange">Frontend Software Engineer</b> with a strong
             passion for building web applications with great user experiences.
             <br />
-            Here's a bit more <b class="orange">about me</b>.
+            Here's a bit more <b class="orange click" onclick="toggleModal()">about me</b>.
           </p>
           <div class="social__list">
             <a
@@ -92,7 +92,7 @@
           </div>
         </div>
       </header>
-      <button class="mail__btn click">
+      <button class="mail__btn click" onclick="toggleModal()">
         <i class="fas fa-envelope"></i>
       </button>
       <a href="#projects" class="scroll">
@@ -152,6 +152,7 @@
           </div>
         </div>
         <div class="modal__half modal__contact">
+        <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
           <h3 class="modal__title modal__title--contact">
             Let's have a chat!
         </h3>
@@ -182,8 +183,18 @@
             Thanks for the message! Looking forward to speaking with you soon.
           </div>
         </div>
-        <i class="fas fa-times modal__exit click"></i>
       </div>
+
+      <img class="shape shape--0" src="./assets/semi circle.svg">
+      <img class="shape shape--1" src="./assets/circle.svg">
+      <img class="shape shape--2" src="./assets/squiggly.svg">
+      <img class="shape shape--3" src="./assets/circle.svg">
+      <img class="shape shape--4" src="./assets/triangle.svg">
+      <img class="shape shape--5" src="./assets/circle.svg">
+      <img class="shape shape--6" src="./assets/squiggly.svg">
+      <img class="shape shape--7" src="./assets/circle.svg">
+      <img class="shape shape--8" src="./assets/semi circle.svg">
+
     </section>
 
     <section id="projects">
@@ -207,7 +218,7 @@
                     Car Sales Projects
                   </h3>
                   <h4 class="project__description--sub-title">
-                    HTML, CSS, Javascript, Vue, Vuex
+                    HTML, CSS, Javascript, React
                   </h4>
                   <p class="project__description--para">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.

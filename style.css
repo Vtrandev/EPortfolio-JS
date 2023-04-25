@@ -696,6 +696,19 @@ footer {
         width: 100%
     }
 
+    .project__description {
+        left: 36px;
+        padding: 20px;
+    }
+
+    .project__description--title {
+        font-size: 30px;
+    }
+
+    .project__description--para {
+        font-size: 14px;
+    }
+
 }
 
 /* Small phones */

@@ -91,7 +91,7 @@ input:focus, textarea:focus {
 }
 
 .title {
-    font-size: 120px;
+    font-size: 110px;
     margin-bottom: 12px;
     text-align: left;
     line-height: 1;
@@ -507,6 +507,10 @@ nav {
     text-align: center;
     font-size: 48px;
     margin-bottom: 60px;
+}
+
+.project {
+    margin: 20px;
 }
 
 .project__img {

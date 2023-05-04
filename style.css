@@ -148,7 +148,8 @@ nav,
 .dark-theme .section__sub-title,
 .dark-theme .nav__link--anchor,
 .dark-theme .fa-adjust,
-.dark-theme .header__para
+.dark-theme .header__para,
+.dark-theme .header__subtitle
 {
     color: white;
 }
@@ -197,7 +198,8 @@ nav,
 
 .header__para {
     font-size: 24px;
-    line-height: 2;
+    padding-top: 20px;
+    line-height: 1.5;
     max-width: 450px;
 }
 
@@ -610,9 +612,44 @@ footer {
     align-items: center;
 }
 
+.footer__logo {
+    position: relative;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+}
+
 .footer__logo--img {
     width: 70px;
     filter: invert(1);
+}
+
+.footer__arrow {
+    width: 30px;
+    height: 30px;
+    color: white;
+    position: absolute;
+    top: 5px;
+    right: -28px;
+    display: none;
+    opacity: 0;
+    transition: all 600ms ease;
+}
+
+.footer__logo:hover .footer__arrow {
+    display: inline;
+    opacity: 1;
+    animation: slide-right 300ms forwards
+}
+
+@keyframes slide-right {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
 
 .footer__social--list {

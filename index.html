@@ -46,7 +46,7 @@
       <div class="header__content" data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000">
         <h1 class="title">Hey</h1>
         <h1 class="title orange">I'm Vuong.</h1>
-        <h3>Frontend Developer / Frontend Software Engineer</h3>
+        <h3 class="header__subtitle">Frontend Developer / Frontend Software Engineer</h3>
         <p class="header__para" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-offset="-300">
           I'm a <b class="orange">Junior Frontend Developer</b> with a strong
           passion for building web applications with great user experiences.
@@ -391,9 +391,19 @@
   <footer>
     <div class="container">
       <div class="row footer__row">
-        <figure>
-          <img class="footer__logo--img" src="./assets/Logo.png" alt="" />
-        </figure>
+        <div class="footer__logo">
+          <figure>
+            <a href="#landing-page"><img class="footer__logo--img" src="./assets/Logo.png" alt="" /></a>
+          </figure>
+          <div class="footer__arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+              class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 10.5L12 3m0 0l7.5 7.5M12 3v18" />
+            </svg>
+          </div>
+        </div>
+        
+
         <div class="footer__social--list">
           <a href="https://github.com/Vtrandev" target="_blank"
             class="footer__social--link link__hover-effect link__hover-effect--white">

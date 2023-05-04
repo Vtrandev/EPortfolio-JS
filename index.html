@@ -1,355 +1,422 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vuong Tran</title>
-    <link rel="stylesheet" href="./style.css" />
-    <script src="./index.js" defer></script>
-    <script
-      src="https://kit.fontawesome.com/c8e4d183c2.js"
-      crossorigin="anonymous"
-    ></script>
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vuong Tran</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="./index.js" defer></script>
+  <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+    (function () {
       emailjs.init("8nIg2t_rNO5VjyR2v");
-   })();
-</script>
-  </head>
+    })();
+  </script>
+</head>
 
-  <body>
-    <section id="landing-page" onmousemove="moveBackground(event)">
-      <nav>
-        <figure>
-          <img id="personal-logo" src="./assets/Logo.png" alt="" />
-        </figure>
+<body>
+  <section id="landing-page" onmousemove="moveBackground(event)">
+    <nav>
+      <figure>
+        <img id="personal-logo" src="./assets/Logo.png" alt="" />
+      </figure>
 
-        <ul class="nav__link--list">
-          <li class="nav__link" onclick="toggleModal()">
-            <a
-              href="#"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black"
-              >About</a
-            >
-          </li>
-          <li class="nav__link">
-            <a
-              href="#projects"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black"
-              >Projects</a
-            >
-          </li>
-          <li class="nav__link" onclick="toggleModal()">
-            <a
-              href="#"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black"
-              >Contact</a
-            >
-          </li>
-          <li class="nav__link click" onclick="toggleContrast()">
-            <a
-              href="#"
-              class="nav__link--anchor link__hover-effect link__hover-effect--black"
-            >
-              <i class="fas fa-adjust"></i
-            ></a>
-          </li>
-        </ul>
-      </nav>
-      <header class="header">
-        <div class="header__content">
-          <h1 class="title">Hey</h1>
-          <h1 class="title orange">I'm Vuong.</h1>
-          <p class="header__para">
-            I'm a <b class="orange">Frontend Software Engineer</b> with a strong
-            passion for building web applications with great user experiences.
-            <br />
-            Here's a bit more <b class="orange click" onclick="toggleModal()">about me</b>.
-          </p>
-          <div class="social__list">
-            <a
-              href="https://www.linkedin.com/in/vuongqtran/"
-              target="_blank"
-              class="social__link click"
-              ><i class="fab fa-linkedin-in"></i
-            ></a>
-            <a
-              href="https://github.com/Vtrandev"
-              target="_blank"
-              class="social__link click"
-              ><i class="fab fa-github"></i
-            ></a>
-            <a
-              href="./assets/Resume.pdf"
-              target="_blank"
-              class="social__link click"
-              ><i class="fas fa-file-pdf"></i
-            ></a>
-          </div>
+      <ul class="nav__link--list">
+        <li class="nav__link" onclick="toggleModal()">
+          <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">About</a>
+        </li>
+        <li class="nav__link">
+          <a href="#projects" class="nav__link--anchor link__hover-effect link__hover-effect--black">Projects</a>
+        </li>
+        <li class="nav__link" onclick="toggleModal()">
+          <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">Contact</a>
+        </li>
+        <li class="nav__link click" onclick="toggleContrast()">
+          <a href="#" class="nav__link--anchor link__hover-effect link__hover-effect--black">
+            <i class="fas fa-adjust"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <header class="header">
+      <div class="header__content" data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000">
+        <h1 class="title">Hey</h1>
+        <h1 class="title orange">I'm Vuong.</h1>
+        <h3>Frontend Developer / Frontend Software Engineer</h3>
+        <p class="header__para" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000" data-aos-offset="-300">
+          I'm a <b class="orange">Junior Frontend Developer</b> with a strong
+          passion for building web applications with great user experiences.
+          <br />
+          Here's a bit more <b class="orange click" onclick="toggleModal()">about me</b>.
+        </p>
+        <div class="social__list">
+          <a href="https://www.linkedin.com/in/vuong-tran-ca" target="_blank" class="social__link click"><i
+              class="fab fa-linkedin-in"></i></a>
+          <a href="https://github.com/Vtrandev" target="_blank" class="social__link click"><i
+              class="fab fa-github"></i></a>
+          <a href="./assets/Resume.pdf" target="_blank" class="social__link click"><i class="fas fa-file-pdf"></i></a>
         </div>
-      </header>
-      <a href="#">
-        <button class="mail__btn click" onclick="toggleModal()">
-          <i class="fas fa-envelope"></i>
-        </button>
-      </a>
-      <a href="#projects" class="scroll">
-        <div class="scroll__icon click"></div>
-      </a>
+      </div>
+    </header>
+    <a href="#">
+      <button class="mail__btn click" onclick="toggleModal()">
+        <i class="fas fa-envelope"></i>
+      </button>
+    </a>
+    <a href="#projects" class="scroll">
+      <div class="scroll__icon click"></div>
+    </a>
 
-      <div class="modal">
-        <div class="modal__half modal__about">
-          <h3 class="modal__title modal__title--about">
-            Here's a bit about me
-          </h3>
-          <h4 class="modal__sub-title modal__sub-title--about">
-            Frontend Software Engineer
-          </h4>
-          <p class="modal__para">
-            I'm a 34 year-old Canadian <b class="orange">Frontend Software Engineer</b> with a strong
-            passion for developing websites with <b class="orange">great user experiences.</b>
-            <br />
-            I currently work on extremely difficult engineer problems. and learn
-            from a team consisting of some of the most <b class="orange">talented</b> and <b class="orange">experienced</b>
-            software engineers everyday.
-          </p>
-
-          <div class="modal__languages">
-            <figure class="modal__language">
-              <img
-                class="modal__language--img"
-                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
-                alt=""
-              />
-              <span class="language__name">HTML</span>
-            </figure>
-            <figure class="modal__language">
-              <img
-                class="modal__language--img"
-                src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
-                alt=""
-              />
-              <span class="language__name">CSS</span>
-            </figure>
-            <figure class="modal__language">
-              <img
-                class="modal__language--img"
-                src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
-                alt=""
-              />
-              <span class="language__name">JavaScript</span>
-            </figure>
-            <figure class="modal__language">
-              <img
-                class="modal__language--img"
-                src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png"
-                alt=""
-              />
-              <span class="language__name">React</span>
-            </figure>
-            <figure class="modal__language">
-              <img
-                class="modal__language--img"
-                src="./assets/logofirebase.svg"
-                alt=""
-              />
-              <span class="language__name">Firebase</span>
-            </figure>
-          </div>
-        </div>
-        <div class="modal__half modal__contact">
-        <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
-          <h3 class="modal__title modal__title--contact">
-            Let's have a chat!
+    <div class="modal">
+      <div class="modal__half modal__about">
+        <h3 class="modal__title modal__title--about">
+          Here's a bit about me
         </h3>
-          <h3 class="modal__sub-title modal__sub-title--contact">
-            I am currently open to new opportunities.
-          </h3>
-          <form id="contact__form" onsubmit="contact(event)">
-            <div class="form__item">
-                <label class="form__item--label">Name</label>
-                <input class="input" name="user_name" type="text" />
-            </div>
-            <div class="form__item">
-                <label class="form__item--label">Email</label>
-                <input class="input" name="user_email" type="email" />
-            </div>
-            <div class="form__item">
-                <label class="form__item--label">Message</label>
-                <textarea class="input" name="message" type="text"></textarea>
-            </div>
-            <button id="contact__submit" class="form__submit">
-                Send it my way!
-            </button>
-          </form>
-          <div class="modal__overlay modal__overlay--loading">
-            <i class="fas fa-spinner"></i>
-          </div>
-          <div class="modal__overlay modal__overlay--success">
-            Thanks for the message! Looking forward to speaking with you soon.
-          </div>
-        </div>
-      </div>
+        <h4 class="modal__sub-title modal__sub-title--about">
+          Frontend Software Engineer
+        </h4>
+        <p class="modal__para">
+          I'm a highly motivated <b class="orange">Frontend Software Engineer</b> with a strong
+          passion for developing websites with <b class="orange">great user experiences.</b>
+          <br />
+          I currently work on extremely difficult engineer problems. and learn
+          from a team consisting of some of the most <b class="orange">talented</b> and <b
+            class="orange">experienced</b>
+          software engineers everyday.
+        </p>
 
-      <img class="shape shape--0" src="./assets/semi circle.svg">
-      <img class="shape shape--1" src="./assets/circle.svg">
-      <img class="shape shape--2" src="./assets/squiggly.svg">
-      <img class="shape shape--3" src="./assets/circle.svg">
-      <img class="shape shape--4" src="./assets/triangle.svg">
-      <img class="shape shape--5" src="./assets/circle.svg">
-      <img class="shape shape--6" src="./assets/squiggly.svg">
-      <img class="shape shape--7" src="./assets/circle.svg">
-      <img class="shape shape--8" src="./assets/semi circle.svg">
-
-    </section>
-
-    <section id="projects">
-      <div class="container">
-        <div class="row">
-          <h1 class="section__title">
-            Here are some of my <span class="orange">projects</span>
-          </h1>
-          <ul class="project__list">
-
-            <li class="project">
-              <div class="project__wrapper">
-                <img
-                  src="./assets/Netflix.PNG"
-                  class="project__img"
-                  alt=""
-                />
-
-                <div class="project__wrapper--bg"></div>
-                <div class="project__description">
-                  <h3 class="project__description--title">
-                    Netflix Clone
-                  </h3>
-                  <h4 class="project__description--sub-title">
-                    Next.js, TypeScript, and TailwindCSS
-                  </h4>
-                  <p class="project__description--para">
-                    Created a fully responsive movie app Netflix clone with Google Sign-In, using Next.js, TypeScript, and TailwindCSS.
-                  </p>
-                  <div class="project__description--links">
-                    <a href="https://github.com/Vtrandev/Netflix-clone" target="_blank" class="project__description--link">
-                      <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://netflix-clone-vtrandev.vercel.app/" target="_blank" class="project__description--link">
-                      <i class="fas fa-link"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </li>
-
-            <li class="project">
-              <div class="project__wrapper">
-                <img
-                  src="./assets/E-Commerce.PNG"
-                  class="project__img"
-                  alt=""
-                />
-
-                <div class="project__wrapper--bg"></div>
-                <div class="project__description">
-                  <h3 class="project__description--title">
-                    E-Commerce Library
-                  </h3>
-                  <h4 class="project__description--sub-title">
-                    React.js, HTML, CSS, JavaScript
-                  </h4>
-                  <p class="project__description--para">
-                    Dynamic routing, fully responsive e-commerce website, along with cart functionality.
-                    Built with best practices in mind using React.js, JavaScript, CSS, and HTML.
-                  </p>
-                  <div class="project__description--links">
-                    <a href="https://github.com/Vtrandev/library-react" target="_blank" class="project__description--link">
-                      <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://library-react-gilt.vercel.app/" target="_blank" class="project__description--link">
-                      <i class="fas fa-link"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </li>
-
-            <li class="project">
-              <div class="project__wrapper">
-                <img
-                  src="./assets/Youtube-Clone.PNG"
-                  class="project__img"
-                  alt=""
-                />
-
-                <div class="project__wrapper--bg"></div>
-                <div class="project__description">
-                  <h3 class="project__description--title">
-                    Youtube Clone
-                  </h3>
-                  <h4 class="project__description--sub-title">
-                    React.js, HTML, CSS, JavaScript, & MUI Materials.
-                  </h4>
-                  <p class="project__description--para">
-                    Integrated Google's API to create a real-world search engine to sort News, Images and Videos.
-                    Built with React.js, HTML, CSS, JavaScript, & MUI Materials.
-                  </p>
-                  <div class="project__description--links">
-                    <a href="https://github.com/Vtrandev/youtube-clone-yt" class="project__description--link" target="_blank">
-                      <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://youtube-clone-yt.vercel.app/" class="project__description--link" target="_blank">
-                      <i class="fas fa-link"></i>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </li>
-
-
-          </ul>
-        </div>
-      </div>
-    </section>
-    <footer>
-      <div class="container">
-        <div class="row footer__row">
-          <figure>
-            <img class="footer__logo--img" src="./assets/Logo.png" alt="" />
+        <div class="modal__languages">
+          <figure class="modal__language">
+            <img class="modal__language--img"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+              alt="" />
+            <span class="language__name">HTML</span>
           </figure>
-          <div class="footer__social--list">
-            <a
-              href="https://github.com/Vtrandev" target="_blank"
-              class="footer__social--link link__hover-effect link__hover-effect--white"
-            >
-              Github</a
-            >
-            <a
-              href="https://www.linkedin.com/in/vuongqtran/" target="_blank"
-              class="footer__social--link link__hover-effect link__hover-effect--white"
-            >
-              LinkedIn</a
-            >
-            <a
-              href="#" onclick="toggleModal()"
-              class="footer__social--link link__hover-effect link__hover-effect--white"
-            >
-              Contact</a
-            >
-            <a
-              href="./assets/Resume.pdf" target="_blank"
-              class="footer__social--link link__hover-effect link__hover-effect--white"
-            >
-              Resume</a
-            >
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
+              alt="" />
+            <span class="language__name">CSS</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
+              alt="" />
+            <span class="language__name">JavaScript</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="./assets/Typescript.svg" alt="" />
+            <span class="language__name">TypeScript</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png"
+              alt="" />
+            <span class="language__name">React</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="./assets/logonext.png" alt="" />
+            <span class="language__name">Next</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="./assets/logofirebase.svg" alt="" />
+            <span class="language__name">Firebase</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="./assets/redux.png" alt="" />
+            <span class="language__name">Redux</span>
+          </figure>
+        </div>
+
+      </div>
+      <div class="modal__half modal__contact">
+        <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+        <h3 class="modal__title modal__title--contact">
+          Let's have a chat!
+        </h3>
+        <h3 class="modal__sub-title modal__sub-title--contact">
+          I am currently open to new opportunities.
+        </h3>
+        <form id="contact__form" onsubmit="contact(event)">
+          <div class="form__item">
+            <label class="form__item--label">Name</label>
+            <input class="input" name="user_name" type="text" />
           </div>
-          <div class="footer__copyright">Copyright © 2023 Vuong Tran</div>
+          <div class="form__item">
+            <label class="form__item--label">Email</label>
+            <input class="input" name="user_email" type="email" />
+          </div>
+          <div class="form__item">
+            <label class="form__item--label">Message</label>
+            <textarea class="input" name="message" type="text"></textarea>
+          </div>
+          <button id="contact__submit" class="form__submit">
+            Send it my way!
+          </button>
+        </form>
+        <div class="modal__overlay modal__overlay--loading">
+          <i class="fas fa-spinner"></i>
+        </div>
+        <div class="modal__overlay modal__overlay--success">
+          Thanks for the message! Looking forward to speaking with you soon.
         </div>
       </div>
-    </footer>
-  </body>
+    </div>
+
+    <img class="shape shape--0" src="./assets/semi circle.svg">
+    <img class="shape shape--1" src="./assets/circle.svg">
+    <img class="shape shape--2" src="./assets/squiggly.svg">
+    <img class="shape shape--3" src="./assets/circle.svg">
+    <img class="shape shape--4" src="./assets/triangle.svg">
+    <img class="shape shape--5" src="./assets/circle.svg">
+    <img class="shape shape--6" src="./assets/squiggly.svg">
+    <img class="shape shape--7" src="./assets/circle.svg">
+    <img class="shape shape--8" src="./assets/semi circle.svg">
+
+  </section>
+
+  <section id="tech-stack">
+    <div class="container" data-aos="fade-left">
+      <div class="row">
+        <h1 class="section__title">
+          My Tech <span class="orange">Stack</span>
+        </h1>
+
+        <div class="modal__languages">
+          <figure class="modal__language">
+            <img class="modal__language--img"
+              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+              alt="" />
+            <span class="tech-stack__language--name">HTML</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
+              alt="" />
+            <span class="tech-stack__language--name">CSS</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
+              alt="" />
+            <span class="tech-stack__language--name">JavaScript</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="./assets/Typescript.svg" alt="" />
+            <span class="tech-stack__language--name">TypeScript</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png"
+              alt="" />
+            <span class="tech-stack__language--name">React</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="./assets/logonext.png" alt="" />
+            <span class="tech-stack__language--name">Next</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="./assets/logofirebase.svg" alt="" />
+            <span class="tech-stack__language--name">Firebase</span>
+          </figure>
+          <figure class="modal__language">
+            <img class="modal__language--img" src="./assets/redux.png" alt="" />
+            <span class="tech-stack__language--name">Redux</span>
+          </figure>
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <div class="row">
+        <h1 class="section__title">
+          Here are some of my <span class="orange">projects</span>
+        </h1>
+        <ul class="project__list">
+
+          <li class="project" data-aos="fade-right">
+            <div class="project__wrapper">
+              <img src="./assets/Netflix.PNG" class="project__img" alt="" />
+
+              <div class="project__wrapper--bg"></div>
+              <div class="project__description">
+                <h3 class="project__description--title">
+                  Netflix Clone
+                </h3>
+                <h4 class="project__description--sub-title">
+                  Next.js, TypeScript, and TailwindCSS
+                </h4>
+                <p class="project__description--para">
+                  Created a fully responsive movie app Netflix clone with Google Sign-In, using Next.js, TypeScript, and
+                  TailwindCSS.
+                </p>
+                <div class="project__description--links">
+                  <a href="https://github.com/Vtrandev/Netflix-clone" target="_blank"
+                    class="project__description--link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://netflix-clone-vtrandev.vercel.app/" target="_blank"
+                    class="project__description--link">
+                    <i class="fas fa-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="project" data-aos="fade-left">
+            <div class="project__wrapper">
+              <img src="./assets/twitter.PNG" class="project__img" alt="" />
+
+              <div class="project__wrapper--bg"></div>
+              <div class="project__description">
+                <h3 class="project__description--title">
+                  Twitter Clone
+                </h3>
+                <h4 class="project__description--sub-title">
+                  Next.js, Tailwind CSS, Redux, Firebase v9
+                </h4>
+                <p class="project__description--para">
+                  Created a social media app clone with posting tweets, commenting, liking, and sharing images functionality.
+                </p>
+                <div class="project__description--links">
+                  <a href="https://github.com/Vtrandev/twitter-clone" target="_blank"
+                    class="project__description--link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://twitter-clone-vtrandev.vercel.app/" target="_blank"
+                    class="project__description--link">
+                    <i class="fas fa-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="project" data-aos="fade-right">
+            <div class="project__wrapper">
+              <img src="./assets/E-Commerce.PNG" class="project__img" alt="" />
+
+              <div class="project__wrapper--bg"></div>
+              <div class="project__description">
+                <h3 class="project__description--title">
+                  E-Commerce Library
+                </h3>
+                <h4 class="project__description--sub-title">
+                  React.js, HTML, CSS, JavaScript
+                </h4>
+                <p class="project__description--para">
+                  Dynamic routing, fully responsive e-commerce website, along with cart functionality.
+                  Built with best practices in mind using React.js, JavaScript, CSS, and HTML.
+                </p>
+                <div class="project__description--links">
+                  <a href="https://github.com/Vtrandev/library-react" target="_blank"
+                    class="project__description--link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://library-react-gilt.vercel.app/" target="_blank" class="project__description--link">
+                    <i class="fas fa-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="project" data-aos="fade-left">
+            <div class="project__wrapper">
+              <img src="./assets/Youtube-Clone.PNG" class="project__img" alt="" />
+
+              <div class="project__wrapper--bg"></div>
+              <div class="project__description">
+                <h3 class="project__description--title">
+                  Youtube Clone
+                </h3>
+                <h4 class="project__description--sub-title">
+                  React.js, HTML, CSS, JavaScript, & MUI Materials
+                </h4>
+                <p class="project__description--para">
+                  Integrated Google's API to create a real-world search engine to sort News, Images and Videos.
+                  Built with React.js, HTML, CSS, JavaScript, & MUI Materials.
+                </p>
+                <div class="project__description--links">
+                  <a href="https://github.com/Vtrandev/youtube-clone-yt" class="project__description--link"
+                    target="_blank">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://youtube-clone-yt.vercel.app/" class="project__description--link" target="_blank">
+                    <i class="fas fa-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+          <li class="project" data-aos="fade-right">
+            <div class="project__wrapper">
+              <img src="./assets/NFT.PNG" class="project__img" alt="" />
+
+              <div class="project__wrapper--bg"></div>
+              <div class="project__description">
+                <h3 class="project__description--title">
+                  NFT World Clone
+                </h3>
+                <h4 class="project__description--sub-title">
+                  React.js, HTML, CSS, JavaScript
+                </h4>
+                <p class="project__description--para">
+                  Transformed a single page application into an interactive user interface
+                  using animations, transitions, and carousels.
+                  Processed API requests with Axios, dynamic routing, fully responsive, and skeleton loading states.
+                  Built with best practices in mind using React.js, JavaScript, CSS, and HTML.
+                </p>
+                <div class="project__description--links">
+                  <a href="https://github.com/Vtrandev/vuong-internship" target="_blank"
+                    class="project__description--link">
+                    <i class="fab fa-github"></i>
+                  </a>
+                  <a href="https://vuong-internship.vercel.app/" target="_blank" class="project__description--link">
+                    <i class="fas fa-link"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="row footer__row">
+        <figure>
+          <img class="footer__logo--img" src="./assets/Logo.png" alt="" />
+        </figure>
+        <div class="footer__social--list">
+          <a href="https://github.com/Vtrandev" target="_blank"
+            class="footer__social--link link__hover-effect link__hover-effect--white">
+            Github</a>
+          <a href="https://www.linkedin.com/in/vuong-tran-ca" target="_blank"
+            class="footer__social--link link__hover-effect link__hover-effect--white">
+            LinkedIn</a>
+          <a href="#" onclick="toggleModal()" class="footer__social--link link__hover-effect link__hover-effect--white">
+            Contact</a>
+          <a href="./assets/Resume.pdf" target="_blank"
+            class="footer__social--link link__hover-effect link__hover-effect--white">
+            Resume</a>
+        </div>
+        <div class="footer__copyright">Copyright © 2023 Vuong Tran</div>
+      </div>
+    </div>
+  </footer>
+</body>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: true,
+  });
+</script>
+
 </html>

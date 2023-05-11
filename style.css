@@ -132,7 +132,7 @@ nav,
 .header {
     opacity: 1;
     visibility: visible;
-    transition: all 400ms 600ms;
+    transition: opacity 400ms 600ms;
 }
 
 .modal--open nav,
@@ -140,7 +140,7 @@ nav,
 .modal--open .header {
     opacity: 0;
     visibility: hidden;
-    transition: all 400ms;
+    transition: opacity 400ms;
 }
 
 .dark-theme .title,
@@ -153,11 +153,13 @@ nav,
 .dark-theme .tech-stack__language--name
 {
     color: white;
+    transition: color 200ms 300ms
 }
 
 .dark-theme section,
-.dark-theme .nav {
+.dark-theme nav {
     background-color: #242424;
+    transition: background-color 200ms 300ms
 }
 
 .dark-theme #personal-logo {
@@ -176,14 +178,6 @@ nav,
 .dark-theme .mail__btn {
     background-color: white;
     color: #242424;
-}
-
-.nav {
-    position: fixed;
-    background-color: rgb(245, 245, 245);
-    left: 0;
-    right: 0;
-    z-index: 5;
 }
 
 /* 
@@ -291,7 +285,15 @@ nav,
 
 */
 
-.nav {
+nav {
+    position: fixed;
+    background-color: rgb(245, 245, 245);
+    left: 0;
+    right: 0;
+    z-index: 5;
+}
+
+.nav__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -623,7 +625,6 @@ nav,
 footer {
     background: #242424;
     display: flex;
-    padding: 6% 0;
     position: relative;
 }
 

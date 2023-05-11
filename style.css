@@ -695,6 +695,8 @@ footer {
 .shape {
     position: fixed;
     z-index: 0;
+    filter: invert(55%) sepia(52%) saturate(1707%) hue-rotate(326deg) brightness(92%) contrast(106%);
+    
 }
 
 .shape--0 {
